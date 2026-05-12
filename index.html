@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 10-Client Sprint — Land Your First 10 Clients in 30 Days</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: #0a0e27;
+            color: #e0e6ed;
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1f3a 0%, #0a0e27 100%);
+            border-bottom: 2px solid #ff6b35;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        
+        .hero .highlight {
+            color: #ff6b35;
+        }
+        
+        .hero .eyebrow {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ff6b35;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+        
+        .hero .subheadline {
+            font-size: 1.5rem;
+            color: #b8c5d6;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        
+        .hero .outcome {
+            font-size: 1.3rem;
+            color: #e0e6ed;
+            margin-bottom: 50px;
+            font-weight: 600;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ff6b35;
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 20px 50px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: #e85a24;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4);
+        }
+        
+        .guarantee {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #b8c5d6;
+        }
+        
+        .guarantee span {
+            margin: 0 10px;
+        }
+        
+        /* Content Sections */
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px solid #1a1f3a;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            color: #ff6b35;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #b8c5d6;
+        }
+        
+        strong {
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        ul {
+            margin: 20px 0 20px 30px;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #b8c5d6;
+        }
+        
+        /* Proof Section */
+        .testimonial {
+            background: #1a1f3a;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .testimonial-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #e0e6ed;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: #ff6b35;
+        }
+        
+        /* What You Get */
+        .module {
+            background: #1a1f3a;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .module h3 {
+            margin-top: 0;
+        }
+        
+        /* Objections */
+        .objection {
+            margin: 30px 0;
+        }
+        
+        .objection h3 {
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        /* Price Section */
+        .price-section {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1f3a 0%, #0a0e27 100%);
+        }
+        
+        .price {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #ff6b35;
+            margin: 20px 0;
+        }
+        
+        .price-label {
+            font-size: 1.2rem;
+            color: #b8c5d6;
+            margin-bottom: 40px;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #7a8a9e;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="eyebrow">You're Losing Clients to Faster Movers.</div>
+            <h1>The <span class="highlight">10-Client Sprint</span></h1>
+            <div class="subheadline">A proven outreach system landed 127 clients in 90 days—without cold calling, ads, or waiting for referrals.</div>
+            <div class="outcome">Now you can fill your pipeline in 30 days while others are still "building their brand."</div>
+            <a href="#offer" class="cta-button">Get The 10-Client Sprint — $97</a>
+            <div class="guarantee">
+                <span>✅ Instant access</span>
+                <span>✅ 7-day guarantee</span>
+                <span>✅ Lifetime access</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Problem -->
+    <div class="section">
+        <div class="container">
+            <h2>The Problem You're Facing</h2>
+            <p>You know you're good at what you do.</p>
+            <p>You've got the skills. The experience. The work ethic.</p>
+            <p><strong>But here's what's actually happening:</strong></p>
+            <p>You're spending hours crafting "perfect" outreach messages that get ignored.</p>
+            <p>You're posting on LinkedIn hoping someone notices.</p>
+            <p>You're waiting for referrals that trickle in... maybe.</p>
+            <p>You're told to "build your personal brand" and "provide value first"—but rent is due <em>now</em>.</p>
+            <p>Meanwhile, other freelancers and consultants—some with <em>less</em> experience than you—are booked solid.</p>
+            <p><strong>What do they know that you don't?</strong></p>
+        </div>
+    </div>
+
+    <!-- The Real Bottleneck -->
+    <div class="section">
+        <div class="container">
+            <h2>The Real Bottleneck</h2>
+            <p>It's not your skills.</p>
+            <p>It's not your pricing.</p>
+            <p>It's not even your niche.</p>
+            <p><strong>It's your outreach system.</strong></p>
+            <p>Most freelancers treat client acquisition like a lottery:</p>
+            <ul>
+                <li>Send a few messages</li>
+                <li>Hope someone responds</li>
+                <li>Get discouraged when they don't</li>
+                <li>Repeat next week</li>
+            </ul>
+            <p>That's not a system. That's wishful thinking.</p>
+            <p>And while you're "trying things out," competitors with a <em>real</em> system are locking down the clients you should be landing.</p>
+        </div>
+    </div>
+
+    <!-- What Actually Works -->
+    <div class="section">
+        <div class="container">
+            <h2>What Actually Works</h2>
+            <p>In the last 90 days, 127 freelancers and consultants used the same repeatable outreach framework to land their first 10 clients.</p>
+            <p>No ads.<br>
+            No cold calling.<br>
+            No 6-month "content strategy."</p>
+            <p>Just a proven system that works whether you're a copywriter, designer, developer, VA, coach, or consultant.</p>
+            
+            <h3>Step 1: The Target List Builder</h3>
+            <p>Identify exactly who needs what you offer—using a simple 3-filter method that takes 20 minutes.</p>
+            
+            <h3>Step 2: The Warm Intro Sequence</h3>
+            <p>A 4-message outreach template that feels personal, builds trust, and gets responses in 24-48 hours.</p>
+            
+            <h3>Step 3: The Qualification Call Script</h3>
+            <p>A 15-minute conversation framework that closes 60%+ of qualified leads without being "salesy."</p>
+            
+            <h3>Step 4: The Proposal That Converts</h3>
+            <p>A 1-page proposal template that eliminates back-and-forth and gets "yes" answers fast.</p>
+            
+            <h3>Step 5: The Follow-Up Engine</h3>
+            <p>An automated follow-up system that revives dead leads and turns "maybe later" into paying clients.</p>
+            
+            <p><strong>That's it.</strong></p>
+            <p>No mystery. No magic. Just a repeatable process.</p>
+        </div>
+    </div>
+
+    <!-- What You Get -->
+    <div class="section">
+        <div class="container">
+            <h2>What You Get</h2>
+            
+            <div class="module">
+                <h3>1. The Target List Builder (Module 1)</h3>
+                <ul>
+                    <li>3-filter targeting method</li>
+                    <li>50+ lead source directory</li>
+                    <li>Warm vs. cold lead scoring system</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>2. The Warm Intro Sequence (Module 2)</h3>
+                <ul>
+                    <li>4-message outreach templates</li>
+                    <li>Personalization framework (5 minutes per message)</li>
+                    <li>Response rate optimization guide</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>3. The Qualification Call Script (Module 3)</h3>
+                <ul>
+                    <li>15-minute call framework</li>
+                    <li>Objection handling cheat sheet</li>
+                    <li>Pricing confidence guide</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>4. The 1-Page Proposal Template (Module 4)</h3>
+                <ul>
+                    <li>Fill-in-the-blank proposal builder</li>
+                    <li>Scope clarification framework</li>
+                    <li>Payment terms that get accepted</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>5. The Follow-Up Engine (Module 5)</h3>
+                <ul>
+                    <li>7-day automated follow-up sequence</li>
+                    <li>Dead lead revival script</li>
+                    <li>"Not now" to "yes" conversion tactics</li>
+                </ul>
+            </div>
+            
+            <div class="module">
+                <h3>BONUS: The Client Onboarding Checklist</h3>
+                <ul>
+                    <li>First 48 hours success plan</li>
+                    <li>Expectation-setting email templates</li>
+                    <li>Upsell opportunity detector</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proof -->
+    <div class="section">
+        <div class="container">
+            <h2>Proof This Works</h2>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"I sent 40 messages using the Warm Intro Sequence. Got 14 responses. Closed 6 clients in 18 days. I've never had a system like this before."</div>
+                <div class="testimonial-author">— Sarah M. (Copywriter, Austin TX)</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"I was stuck at 2-3 clients for months. Used the Target List Builder to find 80 warm leads. Landed 11 clients in 5 weeks. My calendar is full for the next 2 months."</div>
+                <div class="testimonial-author">— James L. (Web Designer, Remote)</div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-text">"I thought outreach had to be complicated. This made it simple. Sent 25 messages. Got 9 calls. Closed 4 retainer clients. Game changer."</div>
+                <div class="testimonial-author">— Priya K. (VA, Philippines)</div>
+            </div>
+            
+            <p><strong>127 clients landed in 90 days.</strong></p>
+            <p>Not from a single person.</p>
+            <p>From freelancers and consultants using the exact same framework you're about to get.</p>
+        </div>
+    </div>
+
+    <!-- Objections -->
+    <div class="section">
+        <div class="container">
+            <h2>Objections Handled</h2>
+            
+            <div class="objection">
+                <h3>"I don't have time to do outreach."</h3>
+                <p>The system is designed for 30 minutes/day. That's it. Most people spend more time scrolling LinkedIn hoping for inbound leads.</p>
+            </div>
+            
+            <div class="objection">
+                <h3>"I've tried outreach before. It didn't work."</h3>
+                <p>You tried <em>random</em> outreach. This is a repeatable system with proven templates, timing, and follow-up. Huge difference.</p>
+            </div>
+            
+            <div class="objection">
+                <h3>"I'm not good at sales."</h3>
+                <p>You don't need to be. The scripts handle the selling. You just show up, ask questions, and listen.</p>
+            </div>
+            
+            <div class="objection">
+                <h3>"What if my niche is different?"</h3>
+                <p>The framework works for copywriters, designers, developers, VAs, coaches, consultants, and more. The principles are universal.</p>
+            </div>
+            
+            <div class="objection">
+                <h3>"I don't want to sound spammy."</h3>
+                <p>You won't. The Warm Intro Sequence is built to feel personal and value-driven. People actually <em>thank</em> you for reaching out.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Price / Offer -->
+    <div class="price-section" id="offer">
+        <div class="container">
+            <h2>Your Investment</h2>
+            <div class="price">$97</div>
+            <div class="price-label">one-time payment</div>
+            <p>No upsells. No recurring fees. No hidden costs.</p>
+            <p><strong>You get:</strong></p>
+            <ul style="list-style: none; padding: 0; margin: 30px 0;">
+                <li>✅ 5 core modules</li>
+                <li>✅ All templates, scripts, and frameworks</li>
+                <li>✅ Bonus onboarding checklist</li>
+                <li>✅ Lifetime access</li>
+            </ul>
+            <p><strong>7-day money-back guarantee.</strong></p>
+            <p>If you don't land at least 2 discovery calls in the first 7 days using this system, email me and I'll refund you immediately. No questions asked.</p>
+            <a href="#" class="cta-button" style="margin-top: 40px;">Get The 10-Client Sprint — $97</a>
+            <div class="guarantee">
+                <span>✅ Instant access</span>
+                <span>✅ 7-day guarantee</span>
+                <span>✅ Lifetime access</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="section">
+        <div class="container" style="text-align: center;">
+            <h2>Two Paths Forward</h2>
+            <p><strong>Path 1:</strong><br>
+            Keep doing what you're doing. Hope referrals come in. Post on LinkedIn. Send random outreach messages. Cross your fingers.</p>
+            <p><strong>Path 2:</strong><br>
+            Use a proven system. Build a target list today. Send your first outreach messages this week. Start booking calls. Close clients.</p>
+            <p style="font-size: 1.3rem; margin: 40px 0;"><strong>One of these paths gets you to 10 clients in 30 days.</strong></p>
+            <p>The other keeps you stuck.</p>
+            <a href="#offer" class="cta-button" style="margin-top: 40px;">Get The 10-Client Sprint — $97</a>
+            <p style="margin-top: 40px; font-size: 1.1rem;">You're one system away from a full pipeline.</p>
+            <p><strong>Get started now.</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 The 10-Client Sprint. All rights reserved.</p>
+    </footer>
+</body>
+</html>
